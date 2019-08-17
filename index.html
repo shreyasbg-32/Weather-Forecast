@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS/Satellite">
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  .size{
+    font-size:160%;
+    color:blanchedalmond;
+  }
+  .contact{
+    width:100%;
+
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsha_nS26IGco333U5QRGZO-g_JlbTgn3m_TrUKHZ11qtyp_Njzw");
+    background-position: center;
+  	background-size: cover;
+	  background-attachment: fixed;
+  }
+  .und{
+    background-image:url("https://images.unsplash.com/photo-1530053969600-caed2596d242?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background-position: center;
+  	background-size: cover;
+	  background-attachment: fixed;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 50px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .image{
+    background-position: center;
+  	background-size: cover;
+    background-attachment: fixed;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUeWHOuTtEl07-7vzLJhvhLkjXE3LdXZ3IBLV2fqVYrvMmQd9d");
+  }
+  .logo-small {
+    color: #f4511e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+  }
+  .size {
+    font-size:160%;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color:black;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  .text-center{
+    color:blanchedalmond;
+  }
+  .para{
+    font-size: 160%;
+    text-align: center;
+    color:white;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#region">REGIONAL FORECAST</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div id="about" class="jumbotron text-center image">
+    
+  <br><br><br>
+  <p class="size">This page displays the live weather forecast of important regions of Karnataka so that it benefits users.Forecast is hosted by weather.com with accurate live telecast.</p> 
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMhVtJtEuItf_1anHVEkKVu-KA0WZrtlqSg9j1fX-v0DUwK2z9" alt="field" style="width: 50%;margin-left:auto;margin-right:auto;visibility:hidden;">
+  
+  
+</div>
+<br><br>
+<div class="row">
+  <div class="col-lg-6">
+  <h2 style="padding: 5px;">Live Weather Updates</h2><br><br>
+  </div>
+</div>
+
+
+
+
+<div class="container-fluid bg-grey und">
+  <div class="row">
+    
+    
+    <div id="region" class="col-sm-4">
+        <img src="https://www.google.com/maps/vt/data=B3F8KvFloZTVVKGoUit19Mi1zSHuO07arLO08O9TYekHk_0VgUVMdZ5nALbkHJrsdtN3riIfg-u3LeQ8BCd9Mw1bZuTrcn58IxqaNtI0HJY3a-hAsh4d6awddrlYWRhPrVi--ADAx0BPFWn-2FgS8eBLTIR5QsZiQsU07YM19ueO7eIama59uy4e7ihRVJSsge8mx7LboaDHm82atReTGIucmbzFdvEDHdsg" style="margin-left: auto;margin-right:auto;width:100%">
+    </div>
+    <div class="col-sm-8">
+      <h2>TUMAKURU</h2><br>
+      <h4><strong>Usual Conditions:</strong> The prevailing climate in Tumakuru is known as a local steppe climate. During the year there is little rainfall. This climate is considered to be BSh according to the Köppen-Geiger climate classification. The temperature here averages 24.4 °C. In a year, the average rainfall is 630 mm.</h4><br>
+      <div class="size">
+          <a href="https://weather.com/en-IN/weather/hourbyhour/l/2d8e83d871e88bfa84d08cf9ccb842c2d34aaa3f7a4f15b76090351bf9e5e4e3" style="color: burlywood;">Check Live Weather Forecast</a> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <br><br>
+  
+
+<div class="container-fluid bg-grey und">
+    <div class="row">
+      
+      <div class="col-sm-4">
+          <img src="https://www.google.com/maps/vt/data=qEEvly3y5ggJaeE2-VvDuW_CEx_X7vNT16-z_R4ukKQB_PqI1Vr4Bf0ibgB1_Pg58iuXAj0VDlUwnHnQmmLw3w4ktNDgTCMSF-OR2c1h-jIiUaJcMJGomTVbH_B5oiOqQNGouJ1SF7wbrnKu8l0eNO89RYN1cBFg211XtVTWK5gVAOztx4_LtOz8dYDPChRN6Zv65BDpNwFz8MxBehuryXDBabMrCVDSiAX9" style="margin-left: auto;margin-right:auto;width:100%">
+      </div>
+      <div class="col-sm-8">
+        <h2>BENGALURU</h2><br>
+        <h4><strong>Usual Conditions:</strong> The city of Bangalore experiences very favorable weather throughout the year. Most tourists visit Bangalore in winter months, between September and March when the temperature is 28 to 32 degrees Celsius (82 to 90° Fahrenheit). In summers from March to May you can see maximum temperature rise up to 38 degrees Celsius (100° Fahrenheit).</h4><br>
+        <div class="size">
+            <a href="https://weather.com/en-IN/weather/hourbyhour/l/61ad2b18d794e3262a434ffa0dc74e29a87067f1394eba4740afdbbcd18ab3a2" style="color: burlywood;">Check Live Weather Forecast</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+    <br><br>
+    <div class="container-fluid bg-grey und">
+        <div class="row">
+          
+          <div class="col-sm-4">
+              <img src="https://www.google.com/maps/vt/data=SQhDx7AmSh7xCDJ_ByXbSYL_VREbcNeJJ7TczzPJIUML4kE0j260nn4UGnab7mmq0Wi60XFz8ADdNOb2OEfWOW0zeewChFPwWtzDVBLceYIvKL4SVSDBdAbLLLU_fbz2kfLctz59N9lN6Y612__yfystwjQBd0yE2CkG9uJlScx-f0IO98GhcjOdTHqVRPcE_ljwE3NF7hYFtZbnJ6NeqE9QZQdIdISTK4BU" style="margin-left: auto;margin-right:auto;width:100%">
+          </div>
+          <div class="col-sm-8">
+            <h2>MANGALURU</h2><br>
+            <h4><strong>Usual Conditions:</strong> The climate is tropical in Mangalore. There is significant rainfall in most months of the year. The short dry season has little effect on the overall climate. This location is classified as Am by Köppen and Geiger. The average annual temperature in Mangalore is 27.0 °C. The rainfall here averages 3783 mm.</h4><br>
+            <div class="size">
+                <a href="https://weather.com/en-IN/weather/hourbyhour/l/38533fd1fc0e79b256bebe8147dfdb08033a6c0c68af87b0e91bb823e30ab133" style="color: burlywood;">Check Live Weather Forecast</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        <br><br>
+
+
+        <div class="container-fluid bg-grey und">
+            <div class="row">
+              
+              <div class="col-sm-4">
+                  <img src="https://www.google.com/maps/vt/data=R34wRNO8mygPuqyh6NEOcuE-21XugmrhRsrB4MjUtu3dyHf8G6dCPxN0QnPT21GAZxJRVwh5H8q-wE7WRtUrnl1GToO4Sk8fVsl1097USfclchj8Sns6ZiFpYDmwP7Ua4GEvkSQnYuKrfXEgJpfpvw5AIlsGa3G2oEMaITAeF2o77fgLs9BMnmrGJ-2uu-gdvZXUsDGlXQ9EUNCd4ZRLgQ4TOrYOKYsuNaCS" style="margin-left: auto;margin-right:auto;width:100%">
+              </div>
+              <div class="col-sm-8">
+                <h2>CHIKKAMAGALURU</h2><br>
+                <h4><strong>Usual Conditions:</strong> The climate here is tropical. In winter, there is much less rainfall than in summer. The climate here is classified as Aw by the Köppen-Geiger system. The average temperature in Chikkamagaluru is 22.0 °C. The rainfall here averages 1006 mm.</h4><br>
+                <div class="size">
+                    <a href="https://weather.com/en-IN/weather/hourbyhour/l/1626e0a4e9bdbf802c8a91c5bf895d9ca0faef83f0f038527f8c9b12459b5e79" style="color: burlywood;">Check Live Weather Forecast</a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          
+            <br><br>
+
+            <div class="container-fluid bg-grey und">
+                <div class="row">
+                  
+                  <div class="col-sm-4 ">
+                      <img src="https://www.google.com/maps/vt/data=ORRQJptwzaIU1MrQNsxPOuqEeLzcZ6uyb3IyYYAHk3fV5tNWlgxkz7xjpT5c4seB9hkzt-zsxAVDla_g5ids8hi5JNscIIrNpXWbusKgN1z5pIGUU8LWmsR40PSJzzPLbjIYeaNOfa1VrygZdmvp_mKXSBto2JGBhU0ZRkGQaSha7ZgEgMmN1T79ghOaAnotOawfr6z6mDRAzSBmW2svDmjudyuEzBIXGhLY" style="margin-left: auto;margin-right:auto;width:100%">
+                  </div>
+                  <div class="col-sm-8">
+                    <h2>KODAGU</h2><br>
+                    <h4><strong>Usual Conditions:</strong> April is the hottest month in Coorg with an average temperature of 29°C (84°F) and the coldest is July at 26°C (79°F). The wettest month is June with an average of 1010mm of rain.</h4><br>
+                    <div class="size">
+                        <a href="https://weather.com/en-IN/weather/hourbyhour/l/d96b4e91e57ebd311162cbeb1bf8417be855459715221c2b4df179911fd88e80" style="color: burlywood;">Check Live Weather Forecast</a> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+                <br><br>
+    
+  
+
+    
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="contact">
+  <h2 class="text-center">CONTACT</h2>
+  
+  
+      
+      <p class="para"><span class="glyphicon glyphicon-map-marker"></span> SIT,BH Road,Tumkur-572103</p>
+      
+      <p class="para"><span class="glyphicon glyphicon-envelope"></span> shreyasbg32@gmail.com</p>
+    
+    
+  
+  
+</div>
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
+
+
+
+<!-- <body>
+  <a href="https://weather.com/en-IN/weather/hourbyhour/l/2d8e83d871e88bfa84d08cf9ccb842c2d34aaa3f7a4f15b76090351bf9e5e4e3">Know weather</a> 
+   <div class="container con">
+     
+   </div>
+    
+</body>
+</html> -->
